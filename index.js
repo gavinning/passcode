@@ -9,7 +9,7 @@ function generate(length = 4) {
     do {
         i++
         result = Math.random().toString().slice(2, 2 + length)
-        console.log(i, result)
+        // console.log(i, result)
     }
     while(result.length !== length && i < 100)
 
