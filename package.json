@@ -1,10 +1,12 @@
 {
   "name": "@4a/passcode",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "短信验证码",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -21,5 +23,12 @@
   "bugs": {
     "url": "https://github.com/gavinning/passcode/issues"
   },
-  "homepage": "https://github.com/gavinning/passcode#readme"
+  "homepage": "https://github.com/gavinning/passcode#readme",
+  "devDependencies": {
+    "@types/node": "^16.3.2",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "ts-node": "^10.1.0"
+  }
 }

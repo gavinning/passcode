@@ -9,7 +9,9 @@ npm i @4a/passcode
 
 ### Usage
 ```js
-const passcode = require('@4a/passcode')
+import passcode from '@4a/passcode'
+// or
+const passcode = require('@4a/passcode').default
 
 console.log(
     passcode()
@@ -19,7 +21,7 @@ console.log(
     passcode(4)
 )
 
-// 最大支持6位
+// 推荐4或6位
 console.log(
     passcode(6)
 )
